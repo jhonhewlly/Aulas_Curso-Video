@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test_001</title>
+    <style>
+        body{
+          font: normal 18pt arial;
+        }
+        input{
+          font: normal 18pt arial;
+          width: 100px;
+        }
+        div#res{
+            margin-top:20px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Você é do Brasil?</h1>
+    Digite seu país:<input type="text" name="txtn" id="tN">
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id="res"></div>
+    <script>//#1 Exercicio solo
+        function analisar(){
+            var Na=window.document.getElementById('tN')
+            var Res=window.document.getElementById('res')
+            var Pa=Na.value
+            Res.innerHTML=`<p>Seu País é :<strong>${Pa}</strong></p>`
+            if(Pa == 'Brasil'|| Pa == 'brasil'){
+                Res.innerHTML+='<p> E Você é <strong>Brasileiro</strong></p>'
+            }else{
+                Res.innerHTML+='<p> E Você é <strong>Estrangeiro</strong></p>'
+            }
+        }
+    </script>
+    
+</body>
+</html>

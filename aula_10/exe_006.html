@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe_006</title>
+    <style>
+        #Area{
+            background: rgb(51, 192, 197);
+            color:rgb(238, 255, 0);
+            font: normal 28pt arial;
+            text-align:center;
+            line-height:200px;
+            width: 200px;
+            height:200px;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Eventos DOM</h1>
+   <div id="Area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()"> 
+         Interaja....
+   </div>
+    <script> 
+     
+     function clicar() {
+        var A=window.document.getElementById('Area')
+           A.innerText='vc clicou'
+           A.style.background='red'
+        }
+     function entrar() {
+        var A=window.document.getElementById('Area')
+           A.innerText='vc entrou!'
+           A.style.background='yellow'
+           A.style.color='blue'
+
+        }
+     function saiu() {
+        var A=window.document.getElementById('Area')
+           A.innerText='vc saiu!'
+           A.style.background='black'
+        }
+      
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe_010</title>
+    <style>
+      body{
+        font: normal 18pt arial;
+      }
+      input{
+        font: normal 18pt arial;
+        width: 100px;
+      }
+      div#res{
+          margin-top:20px;
+      }
+    </style>
+</head>
+<body>
+  <h1>Sistema de Multas</h1>
+   Velocidade do Carro:<input type="number" name="txtn1" id="txtvel"> km/h
+   <input type="button" value="Verificar" onclick="calcular()" >
+   <div id="res"></div>
+
+   <script>
+   
+   function calcular(){
+    var vel=window.document.getElementById('txtvel')
+    var Res=window.document.querySelector('div#res')
+    var v=Number(vel.value)
+    Res.innerHTML=`<p>A sua velocidade atual é de<strong> ${v} km/h</strong></p>`
+    if(v > 60){
+        Res.innerHTML+='<p>Você esta <strong>Multado</strong> por excesso de velocidade.</p>'
+    }
+    Res.innerHTML+='<p>Dirija sempre com segurança.</p>'
+
+   }
+
+   </script>
+
+</body>
+</html>

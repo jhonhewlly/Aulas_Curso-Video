@@ -1,0 +1,35 @@
+.bdy{
+    background-color: lightseagreen;
+    text-align:center; 
+    width: 940px; 
+    margin:auto;
+
+}
+h2{
+    color:lightgray;
+    font-size: 30px;  
+}
+figcaption{
+    color:#4c00ff;
+    padding-top:10px;
+    font-size: 30px;
+}
+div{
+    background-color: #9b9595;
+    margin:auto;
+    width: 940px;
+    padding:1px;
+}
+figure{
+    background-color: #12df12;
+    width:500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.img2 {
+    margin-top:30px;
+}
+.img1 {
+    margin-bottom:auto;
+    height:50px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe_006_1</title>
+    <style>
+        #Area{
+            background: rgb(51, 192, 197);
+            color:rgb(238, 255, 0);
+            font: normal 28pt arial;
+            text-align:center;
+            line-height:200px;
+            width: 200px;
+            height:200px;
+        }
+        
+    </style>
+</head>
+<body>
+   <h1>Eventos DOM</h1>
+   <div id="Area"> 
+         Interaja....
+   </div>
+   <script> 
+     var a=window.document.getElementById('Area') //agora o codigo funciona
+     a.addEventListener('click', clicar)// a diferença é o on na entrada do addEventListener...
+     a.addEventListener('mouseover', entrar)
+     a.addEventListener('mouseout', saiu)
+
+     function clicar() {
+        a.innerText='vc clicou'
+        a.style.background='red'
+      }
+     function entrar() {
+
+        a.innerText='vc entrou!'
+        a.style.background='yellow'
+        a.style.color='blue'
+
+      }
+     function saiu() {
+
+        a.innerText='vc saiu!'
+        a.style.background='black'
+      }
+      
+   </script>
+
+</body>
+</html>

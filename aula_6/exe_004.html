@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="icon_js.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exe_004</title>
+    
+</head>
+<body>
+    
+    <script> 
+      var s=window.prompt('Digite uma palavra')
+      var w=234
+     /* window.alert(`esta palavra possui ${s.length} letras!`)
+      window.alert(s.toLowerCase()) convertendo para minúsculo
+      window.alert(s.toUpperCase()) convertendo para maiúsculo
+      */
+      document.write(`Esta palavra possui ${s.length} letras!<br>`) //este comando le permite escrever no proprio documento do html.
+      document.write(`Esta palavra em minúscula se apresenta como ${s.toLowerCase()}<br>`)
+      document.write(`Em maiúscula como ${s.toUpperCase()}<br>`)
+      /* podemos formatar numeros com o comando:
+       n.toFixed(numerodecasasdecimais)
+       outra coisa interessante é o comando n.toFixed(ncd).replace(".",",")
+       que faz a troca de pontos por virgulas em numeros.*/
+       
+       document.write(`${w.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}`)// é outro comando que permite apresentar valores em moedas
+    </script>
+
+</body>
+</html>
